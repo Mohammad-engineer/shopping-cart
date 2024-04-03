@@ -4,6 +4,7 @@ import Styles from "./ProductsPage.module.css";
 import { InfinitySpin } from "react-loader-spinner";
 import { IoSearch } from "react-icons/io5";
 import { useState } from "react";
+import {FaListUl} from 'react-icons/fa'
 
 
 const ProductsPage = () => {
@@ -12,7 +13,7 @@ const ProductsPage = () => {
   const [search,setSearch] = useState('')
 
   const searchHandler = ()=>{
-    
+
   }
 
   return (
@@ -35,7 +36,18 @@ const ProductsPage = () => {
             <Card key={product.id} data={product} />
           ))}
         </div>
-        <div>sidebar</div>
+        <div>
+          <div><FaListUl />
+          <p>Categiries</p>
+          </div>
+          <ul>
+            <li>All</li>
+            <li>Electronics</li>
+            <li>Jewelery</li>
+            <li>Mens Clothing</li>
+            <li>Womens Clothing</li>
+          </ul>
+        </div>
       </div>
     </>
   );
