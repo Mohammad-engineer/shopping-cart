@@ -6,7 +6,6 @@ import Styles from "./Card.module.css";
 
 
 const Card = ({data}) => {
-    console.log({data});
     const {category,description,id,image,price,title,rating:{rate,count}} = data
   return (
     <div className={Styles.card} >
